@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79f6f2cdcac545c1a47adf316e8fc7d7" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="DBTeknikServisModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLADMIN" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLCARI" Width="1.5" PointX="7.625" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLDEPARTMAN" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLFATURADETAY" Width="1.5" PointX="13" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLGIDER" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLKATEGORİ" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLNOTLAR" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUN" Width="1.875" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLARACLAR" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUN_TBLKATEGORİ" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNKABUL" Width="1.5" PointX="12.375" PointY="4.875" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNKABUL_TBLCARI" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLARIZA" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNTAKIP" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLHAKKIMIZDA" Width="1.5" PointX="9.375" PointY="11.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLILETISIM" Width="1.5" PointX="11.375" PointY="11.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLURUNHAREKET" Width="1.5" PointX="5.25" PointY="4" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLURUNHAREKET_TBLURUN" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.ilceler" Width="1.5" PointX="5.75" PointY="12.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.iller" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLFATURABILGI" Width="1.5" PointX="13.375" PointY="8.75" />
+        <EntityTypeShape EntityType="DBTeknikServisModel.TBLPERSONEL" Width="1.5" PointX="13.375" PointY="12.75" />
+        <AssociationConnector Association="DBTeknikServisModel.FK_TBLPERSONEL_TBLDEPARTMAN" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26527C1E-B279-4246-A339-38F217B7F9F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projeDevexpress</RootNamespace>
+    <AssemblyName>projeDevexpress</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.UI, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Win, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBTeknikServisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTeknikServisDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTeknikServisDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FaturaIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FaturaIslem.Designer.cs">
+      <DependentUpon>FaturaIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmAnasayfa.Designer.cs">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmArızaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmArızaDetay.Designer.cs">
+      <DependentUpon>FrmArızaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmArızadetayı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmArızadetayı.Designer.cs">
+      <DependentUpon>FrmArızadetayı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmArızaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmArızaListesi.Designer.cs">
+      <DependentUpon>FrmArızaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmCariListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmCariListesi.Designer.cs">
+      <DependentUpon>FrmCariListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmCariİller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmCariİller.Designer.cs">
+      <DependentUpon>FrmCariİller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmDepartman.Designer.cs">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmFaturaKalem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmFaturaKalem.Designer.cs">
+      <DependentUpon>FrmFaturaKalem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmFaturaKalemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmFaturaKalemleri.Designer.cs">
+      <DependentUpon>FrmFaturaKalemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmGauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmGauge.Designer.cs">
+      <DependentUpon>FrmGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmHarita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmHarita.Designer.cs">
+      <DependentUpon>FrmHarita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmKategori.Designer.cs">
+      <DependentUpon>FrmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmKurlar.Designer.cs">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmMarkalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmMarkalar.Designer.cs">
+      <DependentUpon>FrmMarkalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmNotlar.Designer.cs">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmQR.Designer.cs">
+      <DependentUpon>FrmQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmRAPOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmRAPOR.Designer.cs">
+      <DependentUpon>FrmRAPOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmUrunAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmUrunAra.Designer.cs">
+      <DependentUpon>FrmUrunAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniArıza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniArıza.Designer.cs">
+      <DependentUpon>FrmYeniArıza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniDepartman.Designer.cs">
+      <DependentUpon>FrmYeniDepartman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniFatura.Designer.cs">
+      <DependentUpon>FrmYeniFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniKategori.Designer.cs">
+      <DependentUpon>FrmYeniKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniNot.Designer.cs">
+      <DependentUpon>FrmYeniNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniPersonel.Designer.cs">
+      <DependentUpon>FrmYeniPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniSatış.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniSatış.Designer.cs">
+      <DependentUpon>FrmYeniSatış.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniÜrün.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYeniÜrün.Designer.cs">
+      <DependentUpon>FrmYeniÜrün.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmYoutube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmYoutube.Designer.cs">
+      <DependentUpon>FrmYoutube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmÜrünListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmÜrünListesi.Designer.cs">
+      <DependentUpon>FrmÜrünListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmÜrünSatılan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmÜrünSatılan.Designer.cs">
+      <DependentUpon>FrmÜrünSatılan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Frmİstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Frmİstatistik.Designer.cs">
+      <DependentUpon>Frmİstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\FrmCariEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmCariEkle.Designer.cs">
+      <DependentUpon>FrmCariEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilceler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim\FrmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim\FrmMail.Designer.cs">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim\FrmMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim\FrmMesajlar.Designer.cs">
+      <DependentUpon>FrmMesajlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim\FrmRehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iletisim\FrmRehber.Designer.cs">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iller.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar\XtraReport2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Raporlar\XtraReport2.Designer.cs">
+      <DependentUpon>XtraReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLADMIN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLARACLAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLARIZA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLCARI.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDEPARTMAN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLFATURABILGI.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLFATURADETAY.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLGIDER.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHAKKIMIZDA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLILETISIM.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKATEGORİ.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLNOTLAR.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLPERSONEL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLURUN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLURUNHAREKET.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLURUNKABUL.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLURUNTAKIP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FaturaIslem.resx">
+      <DependentUpon>FaturaIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmAnasayfa.resx">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmArızaDetay.resx">
+      <DependentUpon>FrmArızaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmArızadetayı.resx">
+      <DependentUpon>FrmArızadetayı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmArızaListesi.resx">
+      <DependentUpon>FrmArızaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmCariEkle.resx">
+      <DependentUpon>FrmCariEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmCariListesi.resx">
+      <DependentUpon>FrmCariListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmCariİller.resx">
+      <DependentUpon>FrmCariİller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmDepartman.resx">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmFaturaKalem.resx">
+      <DependentUpon>FrmFaturaKalem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmFaturaKalemleri.resx">
+      <DependentUpon>FrmFaturaKalemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmGauge.resx">
+      <DependentUpon>FrmGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmHarita.resx">
+      <DependentUpon>FrmHarita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmKategori.resx">
+      <DependentUpon>FrmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmKurlar.resx">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmMarkalar.resx">
+      <DependentUpon>FrmMarkalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmNotlar.resx">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmQR.resx">
+      <DependentUpon>FrmQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmRAPOR.resx">
+      <DependentUpon>FrmRAPOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmUrunAra.resx">
+      <DependentUpon>FrmUrunAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniArıza.resx">
+      <DependentUpon>FrmYeniArıza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniDepartman.resx">
+      <DependentUpon>FrmYeniDepartman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniFatura.resx">
+      <DependentUpon>FrmYeniFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniKategori.resx">
+      <DependentUpon>FrmYeniKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniNot.resx">
+      <DependentUpon>FrmYeniNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniPersonel.resx">
+      <DependentUpon>FrmYeniPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniSatış.resx">
+      <DependentUpon>FrmYeniSatış.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYeniÜrün.resx">
+      <DependentUpon>FrmYeniÜrün.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmYoutube.resx">
+      <DependentUpon>FrmYoutube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmÜrünListesi.resx">
+      <DependentUpon>FrmÜrünListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmÜrünSatılan.resx">
+      <DependentUpon>FrmÜrünSatılan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Frmİstatistik.resx">
+      <DependentUpon>Frmİstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim\FrmMail.resx">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim\FrmMesajlar.resx">
+      <DependentUpon>FrmMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iletisim\FrmRehber.resx">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raporlar\XtraReport2.resx">
+      <DependentUpon>XtraReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBTeknikServisDataSet.xsc">
+      <DependentUpon>DBTeknikServisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet.xss">
+      <DependentUpon>DBTeknikServisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet1.xsc">
+      <DependentUpon>DBTeknikServisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet1.xss">
+      <DependentUpon>DBTeknikServisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet10.xsc">
+      <DependentUpon>DBTeknikServisDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet10.xss">
+      <DependentUpon>DBTeknikServisDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet11.xsc">
+      <DependentUpon>DBTeknikServisDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet11.xss">
+      <DependentUpon>DBTeknikServisDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet12.xsc">
+      <DependentUpon>DBTeknikServisDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet12.xss">
+      <DependentUpon>DBTeknikServisDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet13.xsc">
+      <DependentUpon>DBTeknikServisDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet13.xss">
+      <DependentUpon>DBTeknikServisDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet14.xsc">
+      <DependentUpon>DBTeknikServisDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet14.xss">
+      <DependentUpon>DBTeknikServisDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet15.xsc">
+      <DependentUpon>DBTeknikServisDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet15.xss">
+      <DependentUpon>DBTeknikServisDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet16.xsc">
+      <DependentUpon>DBTeknikServisDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet16.xss">
+      <DependentUpon>DBTeknikServisDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet17.xsc">
+      <DependentUpon>DBTeknikServisDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet17.xss">
+      <DependentUpon>DBTeknikServisDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet18.xsc">
+      <DependentUpon>DBTeknikServisDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet18.xss">
+      <DependentUpon>DBTeknikServisDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet19.xsc">
+      <DependentUpon>DBTeknikServisDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet19.xss">
+      <DependentUpon>DBTeknikServisDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet2.xsc">
+      <DependentUpon>DBTeknikServisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet2.xss">
+      <DependentUpon>DBTeknikServisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet20.xsc">
+      <DependentUpon>DBTeknikServisDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet20.xss">
+      <DependentUpon>DBTeknikServisDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet21.xsc">
+      <DependentUpon>DBTeknikServisDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet21.xss">
+      <DependentUpon>DBTeknikServisDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet22.xsc">
+      <DependentUpon>DBTeknikServisDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet22.xss">
+      <DependentUpon>DBTeknikServisDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet23.xsc">
+      <DependentUpon>DBTeknikServisDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet23.xss">
+      <DependentUpon>DBTeknikServisDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet24.xsc">
+      <DependentUpon>DBTeknikServisDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet24.xss">
+      <DependentUpon>DBTeknikServisDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet25.xsc">
+      <DependentUpon>DBTeknikServisDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet25.xss">
+      <DependentUpon>DBTeknikServisDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet26.xsc">
+      <DependentUpon>DBTeknikServisDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet26.xss">
+      <DependentUpon>DBTeknikServisDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet27.xsc">
+      <DependentUpon>DBTeknikServisDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet27.xss">
+      <DependentUpon>DBTeknikServisDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet28.xsc">
+      <DependentUpon>DBTeknikServisDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet28.xss">
+      <DependentUpon>DBTeknikServisDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet29.xsc">
+      <DependentUpon>DBTeknikServisDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet29.xss">
+      <DependentUpon>DBTeknikServisDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet3.xsc">
+      <DependentUpon>DBTeknikServisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet3.xss">
+      <DependentUpon>DBTeknikServisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet30.xsc">
+      <DependentUpon>DBTeknikServisDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet30.xss">
+      <DependentUpon>DBTeknikServisDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet31.xsc">
+      <DependentUpon>DBTeknikServisDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet31.xss">
+      <DependentUpon>DBTeknikServisDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet32.xsc">
+      <DependentUpon>DBTeknikServisDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet32.xss">
+      <DependentUpon>DBTeknikServisDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet4.xsc">
+      <DependentUpon>DBTeknikServisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet4.xss">
+      <DependentUpon>DBTeknikServisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet5.xsc">
+      <DependentUpon>DBTeknikServisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet5.xss">
+      <DependentUpon>DBTeknikServisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet6.xsc">
+      <DependentUpon>DBTeknikServisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet6.xss">
+      <DependentUpon>DBTeknikServisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet7.xsc">
+      <DependentUpon>DBTeknikServisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet7.xss">
+      <DependentUpon>DBTeknikServisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet8.xsc">
+      <DependentUpon>DBTeknikServisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet8.xss">
+      <DependentUpon>DBTeknikServisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet9.xsc">
+      <DependentUpon>DBTeknikServisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="DBTeknikServisDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTeknikServisDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTeknikServisDataSet9.xss">
+      <DependentUpon>DBTeknikServisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
