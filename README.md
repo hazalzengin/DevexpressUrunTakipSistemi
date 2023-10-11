@@ -17,5 +17,15 @@ Arızalı Ürün Listesi
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/c9727e34-9674-43ee-adcc-f82798ca5db6)
 QR Oluşturma
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/ca14d974-ce86-4c2e-b4a6-fbafbfaa596a)
+Cari Listesi
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/24a9e4e6-2556-4275-883b-162e038fac52)
+Yeni Cari Ekleme Alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/31cf147b-1451-490e-ae35-22655146ab38)
+Cari İl Trafiği
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/08ad70b5-3dfd-4357-a0c6-8a6cb48fbca6)
+Satış Listesi ve Yeni Satılacak Ürün Alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/f7570f39-2a7f-4e1b-b50c-e685d424d03e)
+
+
 
 
