@@ -25,6 +25,15 @@ Cari İl Trafiği
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/08ad70b5-3dfd-4357-a0c6-8a6cb48fbca6)
 Satış Listesi ve Yeni Satılacak Ürün Alanı
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/f7570f39-2a7f-4e1b-b50c-e685d424d03e)
+Fatura İşlem ve Yeni Fatura Kesme Ekranı
+![Ekran görüntüsü 2023-10-17 125204](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/c2351f24-4c4e-4820-b123-09422b8c64b9)
+Fatura Kalem İşlemleri
+![Ekran görüntüsü 2023-10-17 125423](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/1cb32173-6c1d-46fb-bdfe-dca1b73affce)
+Fatura Aratma
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/eb5371bd-1898-41a7-a942-95dd1b934d4b)
+
+
+
 
 
 
