@@ -31,6 +31,15 @@ Fatura Kalem İşlemleri
 ![Ekran görüntüsü 2023-10-17 125423](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/1cb32173-6c1d-46fb-bdfe-dca1b73affce)
 Fatura Aratma
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/eb5371bd-1898-41a7-a942-95dd1b934d4b)
+Personel Listesi ve Yeni Personel Ekleme Alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/e9a99f61-318c-4563-a27e-bacd36a3fa79)
+Departman Listesi ve Yeni Departman
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/23e5e4ec-e5ff-4657-9851-6037996713a2)
+Veritabanı tablosundan Rapor Oluşturma
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/1a060502-2264-4891-8a5f-3f99789a0634)
+
+
+
 
 
 
