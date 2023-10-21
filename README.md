@@ -37,6 +37,21 @@ Departman Listesi ve Yeni Departman
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/23e5e4ec-e5ff-4657-9851-6037996713a2)
 Veritabanı tablosundan Rapor Oluşturma
 ![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/1a060502-2264-4891-8a5f-3f99789a0634)
+Notlar ve yeni not ekleme alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/55f24a0b-0cdf-4d94-abe4-22965f0752aa)
+Döviz Kuru Alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/dc5df91f-0afc-4889-9200-93dca93002c6)
+Harita
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/c6e65495-9251-46ab-97c8-ce670b77457e)
+Rehber
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/c2bef8b6-3e33-40da-bacb-378977a8a1e6)
+Mesajlar
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/3304c824-0fa3-4584-ad7c-2da7925e0fca)
+Mail Gönderme Alanı
+![image](https://github.com/hazalzengin/DevexpressUrunTakipSistemi/assets/141309108/a11c8e82-d3ea-44f3-96a7-054954a38925)
+
+
+
 
 
 
